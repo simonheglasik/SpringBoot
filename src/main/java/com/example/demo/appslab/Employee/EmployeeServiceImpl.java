@@ -1,6 +1,6 @@
-package com.example.demo.appslab;
+package com.example.demo.appslab.Employee;
+import com.example.demo.appslab.Employee.EmployeeService;
 import com.example.demo.appslab.model.job;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

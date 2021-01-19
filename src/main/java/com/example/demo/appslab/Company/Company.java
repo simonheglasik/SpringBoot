@@ -1,13 +1,23 @@
 package com.example.demo.appslab.Company;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.example.demo.appslab.Address;
+
+import javax.persistence.*;
 
 @Entity
 public class Company<C, S> {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
+
+    public Company( String name, Address address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+    }
 
     public long getId() {
         return id;

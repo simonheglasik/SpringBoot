@@ -1,6 +1,6 @@
 package com.example.demo.appslab.Company;
 
-import org.springframework.stereotype.Service;
+import com.example.demo.appslab.Address;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
@@ -14,8 +14,8 @@ public class CompanyController
     @GetMapping("/company")
     void save()
     {
-        var comp = new Company<>();
-        comp.setName("Peter");
+        var adr = new Address("A.Bernoláka","0000","Žilina","Slovakia");
+        var comp = new Company<>("Mena", adr);
         companyService.saveCompany(comp);
     }
 }

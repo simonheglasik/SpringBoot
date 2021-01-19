@@ -1,7 +1,8 @@
 package com.example.demo.appslab;
 
+import com.example.demo.appslab.Employee.EmployeeService;
+import com.example.demo.appslab.Employee.EmployeeServiceImpl;
 import com.example.demo.appslab.model.job;
-import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-package com.example.demo.appslab;
+package com.example.demo.appslab.Employee;
 
-import com.example.demo.appslab.EmployeeService;
+import com.example.demo.appslab.Snail;
 import com.example.demo.appslab.model.Driver;
 import com.example.demo.appslab.model.Programmer;
 import com.example.demo.appslab.model.Teacher;

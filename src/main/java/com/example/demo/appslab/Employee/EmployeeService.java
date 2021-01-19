@@ -1,4 +1,4 @@
-package com.example.demo.appslab;
+package com.example.demo.appslab.Employee;
 import com.example.demo.appslab.model.job;
 
 import java.util.ArrayList;

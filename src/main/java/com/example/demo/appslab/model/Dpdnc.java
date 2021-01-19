@@ -1,7 +1,7 @@
 package com.example.demo.appslab.model;
 
-import com.example.demo.appslab.EmployeeService;
-import com.example.demo.appslab.EmployeeServiceImpl;
+import com.example.demo.appslab.Employee.EmployeeService;
+import com.example.demo.appslab.Employee.EmployeeServiceImpl;
 import org.springframework.stereotype.Component;
 
 @Component
