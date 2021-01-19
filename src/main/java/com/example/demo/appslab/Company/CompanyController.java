@@ -15,7 +15,7 @@ public class CompanyController
     void save()
     {
         var adr = new Address("A.Bernoláka","0000","Žilina","Slovakia");
-        var comp = new Company<>("Mena", adr);
+        var comp = new Company("Mena", adr);
         companyService.saveCompany(comp);
     }
 }

@@ -5,7 +5,7 @@ import com.example.demo.appslab.Address;
 import javax.persistence.*;
 
 @Entity
-public class Company<C, S> {
+public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

@@ -15,8 +15,6 @@ public class Address
     private String zipCode;
     private String city;
     private String state;
-    @OneToOne(mappedBy = "address")
-    private com.example.demo.appslab.Company.Company Company;
 
     public Address(String street, String zipCode, String city, String state)
     {
