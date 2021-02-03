@@ -1,8 +1,10 @@
 package com.example.demo.appslab.Company;
 
 import com.example.demo.appslab.Address;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
 @RestController
 public class CompanyController
 {
@@ -11,11 +13,10 @@ public class CompanyController
     }
 
     CompanyService companyService;
-    @GetMapping("/company")
-    void save()
+    @PostMapping("/company")
+    public void postController(@RequestBody Company Company)
     {
-        var adr = new Address("A.Bernoláka","0000","Žilina","Slovakia");
-        var comp = new Company("Mena", adr);
-        companyService.saveCompany(comp);
+        companyService.saveCompany(Company);
+        //return ResponseEntity.ok(HttpStatus.OK);
     }
 }
