@@ -17,6 +17,5 @@ public class CompanyController
     public void postController(@RequestBody Company Company)
     {
         companyService.saveCompany(Company);
-        //return ResponseEntity.ok(HttpStatus.OK);
     }
 }
