@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class CompanyController
 {
-    public CompanyController(CompanyService companyService) {
+    public CompanyController(CompanyService companyService)
+    {
         this.companyService = companyService;
     }
 

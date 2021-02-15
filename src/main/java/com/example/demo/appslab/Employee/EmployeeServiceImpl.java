@@ -7,7 +7,12 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService
 {
-    private double number;
+    double number;
+   EmployeeRepository rep;
+    public EmployeeServiceImpl(EmployeeRepository rep)
+    {
+        this.rep = rep;
+    }
     public void writeNumber()
     {
         System.out.println(++this.number);
@@ -20,5 +25,10 @@ public class EmployeeServiceImpl implements EmployeeService
     @Override
     public int sumAllBunuses(List<job> jobs) {
         return jobs.stream().mapToInt(job::getBonus).sum();
+    }
+
+    @Override
+    public void saveEmployee(Employee employee) {
+        rep.save(employee);
     }
 }
